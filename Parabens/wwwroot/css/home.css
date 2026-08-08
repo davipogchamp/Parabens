@@ -1,0 +1,454 @@
+﻿@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins',sans-serif;
+    background: #0f0f13;
+    color: white;
+}
+
+/*====================================================
+                        HOME
+====================================================*/
+
+.hero {
+    position: relative;
+    min-height: 120vh;
+    justify-content: center;
+    align-items: start;
+    overflow: hidden;
+}
+
+.overlay {
+    background-image: url('../img/meu amor na praia.png');
+    position: absolute;
+    inset: 0px 50px 0px 50px;
+
+}
+
+.hero-content {
+    margin-top: 5vh;
+    position: relative;
+    width: max(px,70%);
+    text-align: center;
+
+}
+
+.tag {
+    display: inline-block;
+    background: rgba(255,255,255,.12);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,.15);
+    padding: 10px 22px;
+    border-radius: 999px;
+    margin-bottom: 20px;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display',serif;
+    font-size: clamp(3rem,8vw,5.5rem);
+    line-height: 1.1;
+}
+
+.hero p {
+    margin: 30px auto;
+    font-size: 1.15rem;
+    line-height: 1.9;
+    color: #ececec;
+}
+
+.btn {
+    display: inline-block;
+    margin-top: 10px;
+    text-decoration: none;
+    color: white;
+    background: #ff5f8f;
+    padding: 18px 40px;
+    border-radius: 999px;
+    transition: .3s;
+    font-weight: 600;
+}
+
+.nomeinho{
+
+    margin-top: 19vh;
+    text-align:center;
+}
+
+    .btn:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 15px 35px rgba(255,95,143,.4);
+    }
+
+/*====================================================
+                    HOME CARDS
+====================================================*/
+
+.cards {
+    width: min(1200px,92%);
+    margin: 80px auto;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    gap: 25px;
+}
+
+.card {
+    background: #1d1d25;
+    border: 1px solid rgba(255,255,255,.08);
+    border-radius: 25px;
+    padding: 35px;
+    transition: .35s;
+}
+
+    .card:hover {
+        transform: translateY(-10px);
+        border-color: #ff5f8f;
+    }
+
+.emoji {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.card h2 {
+    margin-bottom: 15px;
+}
+
+.card p {
+    color: #d4d4d4;
+    line-height: 1.8;
+}
+
+/*====================================================
+                   HOME RESPONSIVO
+====================================================*/
+
+@media(max-width:768px) {
+
+    .hero {
+        padding: 50px 0;
+    }
+
+        .hero h1 {
+            font-size: 3rem;
+        }
+
+        .hero p {
+            font-size: 1rem;
+        }
+}
+/* =======================
+        TIMELINE
+======================= */
+
+.timeline {
+    width: min(1000px,90%);
+    margin: 120px auto;
+}
+
+    .timeline h2 {
+        text-align: center;
+        font-size: 3rem;
+        margin-bottom: 70px;
+        font-family: "Playfair Display",serif;
+    }
+
+.linha {
+    position: relative;
+}
+
+    .linha::before {
+        content: "";
+        position: absolute;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 4px;
+        height: 100%;
+        background: #ff5f8f;
+        margin-top: 20vh;
+    }
+
+.evento {
+    width: 50%;
+    padding: 30px;
+    position: relative;
+}
+
+.esquerda {
+    padding-right: 60px;
+}
+
+.direita {
+    margin-left: 50%;
+    padding-left: 60px;
+}
+
+.conteudo {
+    background: rgba(255,255,255,.08);
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 20px;
+    padding: 25px;
+    backdrop-filter: blur(10px);
+}
+
+.evento::before {
+    content: "";
+    width: 18px;
+    height: 18px;
+    background: #ff5f8f;
+    border-radius: 50%;
+    position: absolute;
+    top: 45px;
+}
+
+.esquerda::before {
+    right: -9px;
+}
+
+.direita::before {
+    left: -9px;
+}
+
+@media(max-width:900px) {
+
+    .linha::before {
+        left: 20px;
+    }
+
+    .evento {
+        width: 100%;
+        padding-left: 60px;
+        padding-right: 0;
+        margin-left: 0;
+    }
+
+        .evento::before {
+            left: 12px;
+        }
+}
+
+.textinho {
+    font-size:x-large;
+    width: 95%;
+    text-align: center;
+    justify-content: space-between;
+    margin-bottom: 30vh;
+}
+
+/*====================================================
+                        NAVBAR
+====================================================*/
+
+.navbar {
+    position: fixed;
+    top: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: min(800px,95%);
+    height: 60px;
+    display: flex;
+    justify-content:left;
+    align-items: center;
+    padding: 0 35px;
+    background: rgba(255,255,255,.08);
+    backdrop-filter: blur(20px);
+    border: 1px solid rgba(255,255,255,.15);
+    border-radius: 50px;
+    z-index: 999;
+    box-shadow: 0 15px 35px rgba(0,0,0,.15);
+}
+
+.logo {
+    font-family: "Poppins",sans-serif;
+    font-size: 1.4rem;
+    font-weight: 600;
+    color: white;
+}
+
+.nav-links {
+    display: flex;
+    gap: 40px;
+    margin-top:auto;
+    list-style: none;
+}
+
+    .nav-links a {
+        text-decoration: none;
+        color: white;
+        font-family: "Poppins",sans-serif;
+        font-size: 15px;
+        font-weight: 500;
+        position: relative;
+        transition: .3s;
+    }
+
+        .nav-links a::after {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: -6px;
+            width: 0;
+            height: 2px;
+            background: #ff79a8;
+            transition: .3s;
+        }
+
+        .nav-links a:hover {
+            color: #ffb3cc;
+        }
+
+            .nav-links a:hover::after {
+                width: 100%;
+            }
+
+
+@media (max-width:900px) {
+
+    .navbar {
+        width: 70%;
+        padding: 0 20px;
+    }
+
+    .nav-links {
+        gap: 18px;
+    }
+}
+
+@media (max-width:700px) {
+
+    .navbar {
+        flex-direction: column;
+        height: auto;
+        padding: 18px;
+        border-radius: 25px;
+    }
+
+    .logo {
+        margin-bottom: 15px;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 15px;
+    }
+}
+/*====================================================
+                       CARTAS
+====================================================*/
+.cartas-section {
+    width: min(1200px,90%);
+    margin: 120px auto;
+}
+
+.titulo {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+    .titulo span {
+        font-size: 3rem;
+    }
+
+    .titulo h1 {
+        font-size: 3rem;
+        margin: 15px 0;
+        font-family: "Playfair Display",serif;
+    }
+
+    .titulo p {
+        color: #d8d8d8;
+    }
+
+.cartas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
+    gap: 35px;
+}
+
+.envelope {
+    background: linear-gradient(145deg,#fff7f9,#ffe8ef);
+    color: #333;
+    border-radius: 22px;
+    padding: 35px;
+    position: relative;
+    overflow: hidden;
+    transition: .35s;
+    cursor: pointer;
+    box-shadow: 0 15px 35px rgba(0,0,0,.15);
+}
+
+    .envelope:hover {
+        transform: translateY(-12px) rotate(-1deg);
+    }
+
+    .envelope::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        height: 12px;
+        background: linear-gradient(90deg,#ff7aa8,#ff4d87);
+    }
+
+.selo {
+    width: 75px;
+    height: 75px;
+    border-radius: 50%;
+    background: #ff4d87;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    margin: auto;
+    margin-bottom: 30px;
+    box-shadow: 0 10px 25px rgba(255,77,135,.35);
+}
+
+.envelope h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 1.4rem;
+}
+
+.envelope p {
+    text-align: center;
+    color: #666;
+    line-height: 1.8;
+    margin-bottom: 30px;
+}
+
+.envelope button {
+    width: 100%;
+    border: none;
+    padding: 16px;
+    border-radius: 12px;
+    background: #ff4d87;
+    color: white;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: .3s;
+}
+
+    .envelope button:hover {
+        background: #ff2d73;
+    }
+
+@media(max-width:768px) {
+
+    .titulo h1 {
+        font-size: 2.3rem;
+    }
+}

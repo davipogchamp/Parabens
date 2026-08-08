@@ -1,0 +1,127 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.carta-page {
+    min-height: 100vh;
+    width: 100%;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient( 135deg, #fff1f5, #ffe0e9 );
+    font-family: "Poppins", sans-serif;
+}
+
+
+/* CARTA */
+
+.carta {
+    width: min(850px, 100%);
+    padding: 70px 80px;
+    background: #fffdf9;
+    border-radius: 6px;
+    box-shadow: 0 20px 60px rgba(100, 30, 50, .15);
+    position: relative;
+}
+
+
+/* DETALHE SUPERIOR */
+
+.carta-topo {
+    text-align: center;
+}
+
+    .carta-topo span {
+        font-size: 40px;
+    }
+
+    .carta-topo p {
+        margin-top: 10px;
+        font-size: 15px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #a35b70;
+    }
+
+
+/* LINHA */
+
+.linha {
+    width: 80px;
+    height: 2px;
+    margin: 30px auto 40px;
+    background: #d9829b;
+}
+
+
+/* TÍTULO */
+
+.carta h1 {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+    color: #4b2733;
+    margin-bottom: 50px;
+}
+
+
+/* TEXTO */
+
+.texto {
+    color: #4b3a40;
+    font-size: 17px;
+    line-height: 2;
+}
+
+    .texto p {
+        margin-bottom: 25px;
+    }
+
+
+/* ASSINATURA */
+
+.assinatura {
+    margin-top: 60px;
+    text-align: right;
+    color: #6a3a48;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+}
+
+    .assinatura strong {
+        display: block;
+        margin-top: 8px;
+        font-size: 28px;
+        color: #a34d68;
+    }
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .carta-page {
+        padding: 30px 15px;
+    }
+
+    .carta {
+        padding: 40px 25px;
+    }
+
+        .carta h1 {
+            font-size: 30px;
+            margin-bottom: 35px;
+        }
+
+    .texto {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .assinatura {
+        margin-top: 40px;
+    }
+}
