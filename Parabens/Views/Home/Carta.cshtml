@@ -2,18 +2,40 @@
     ViewData["Title"] = "Uma Carta Para Você ❤️";
 }
 
-<link rel="stylesheet" href="~/css/carta.css" />
+<link rel="stylesheet" href="~/css/home.css" />
 
-<section class="carta-page">
+<nav class="navbar">
+
+    <div class="logo">
+        ❤️ D & N
+    </div>
+
+    <ul class="nav-links">
+
+        <li><a asp-controller="Home" asp-action="Home">Início</a></li>
+
+        <li><a asp-controller="Home" asp-action="_TimeLine">Nossa História</a></li>
+
+        <li><a class="" asp-controller="Home" asp-action="CoisasQueAmo">Coisas Que Amo</a></li>
+
+        <li><a asp-controller="Home" asp-action="Carta">Carta</a></li>
+
+        <li><a href="#playlist">Playlist</a></li>
+
+    </ul>
+
+</nav>
+
+<div class="carta-page">
 
     <div class="carta">
 
         <div class="carta-topo">
             <span>❤️</span>
-            <p>Para o amor da minha vida</p>
+            <p>Para a minha vida</p>
         </div>
 
-        <div class="linha"></div>
+        <div class="line"></div>
 
         <h1>Uma carta para você</h1>
 
@@ -24,20 +46,30 @@
             </p>
 
             <p>
-                Hoje eu queria tirar um momento para escrever
-                algumas palavras para você.
+                Hoje, no seu aniversário, eu gostaria que lesse
+                algumas palavras que dedico a você.
+            </p>
+              
+            <p>
+                    Eu quero começar te dizendo que eu poderia te dar todos os presentes do mundo, escrever mil cartas como essa, passar horas no dicionário procurando palavras pra te descrever,
+                mas acho que ainda não seria o bastante pra demonstrar o que sinto.<br />
+
+                    Por mais óbvio que pareça, eu tenho uma adimiração enorme por você, amo a maneira como você enxerga as coisas e o jeito como trata as pessoas.
+                Foi assim dessa forma, com seus gestos carinhosos, seu sorriso e suas brincadeiras que você se tornou a mulher que eu lembro quando penso no futuro.<br /> 
+
+                    No momento em que tô escrevendo a gente ta em ligação enquanto você faz seu skincare, são nesses momentos que percebo o quão sortudo eu sou por te ter. Porque não importa o que a gente esteja fazendo quando você tá junto tudo fica mais leve.
+                Quando estou contigo tenho a sensação de que tudo tá perfeito, e por mais clichê que pareça você me faz muito bem meu amor.<br />
+
             </p>
 
             <p>
-                Você pode escrever aqui tudo aquilo que sente,
-                lembrar momentos especiais de vocês e dizer
-                o quanto ela é importante para você.
-            </p>
-
-            <p>
+                Quero que você saiba que me importo muito com você, tento sempre te fazer feliz tirar um sorriso seu. Esse é o meu jeito de amar.
                 Obrigado por todos os momentos que vivemos juntos.
                 Espero que ainda possamos criar muitas outras
                 lembranças e continuar escrevendo nossa história.
+            </p>
+            <p>
+
             </p>
 
             <p>
@@ -56,4 +88,4 @@
 
     </div>
 
-</section>
+</div>

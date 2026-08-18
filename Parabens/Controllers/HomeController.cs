@@ -27,7 +27,11 @@ namespace Parabens.Controllers
         {
             return View();
         }
-
+        
+        public IActionResult CoisasQueAmo()
+        {
+            return View();
+        }
         public IActionResult Privacy()
         {
             return View();

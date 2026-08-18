@@ -249,7 +249,7 @@ body {
 ====================================================*/
 
 .navbar {
-    position: fixed;
+    position:fixed;
     top: 20px;
     left: 50%;
     transform: translateX(-50%);
@@ -345,110 +345,130 @@ body {
 /*====================================================
                        CARTAS
 ====================================================*/
-.cartas-section {
-    width: min(1200px,90%);
-    margin: 120px auto;
-}
 
-.titulo {
-    text-align: center;
-    margin-bottom: 60px;
-}
 
-    .titulo span {
-        font-size: 3rem;
-    }
-
-    .titulo h1 {
-        font-size: 3rem;
-        margin: 15px 0;
-        font-family: "Playfair Display",serif;
-    }
-
-    .titulo p {
-        color: #d8d8d8;
-    }
-
-.cartas {
-    display: grid;
-    grid-template-columns: repeat(auto-fit,minmax(320px,1fr));
-    gap: 35px;
-}
-
-.envelope {
-    background: linear-gradient(145deg,#fff7f9,#ffe8ef);
-    color: #333;
-    border-radius: 22px;
-    padding: 35px;
-    position: relative;
-    overflow: hidden;
-    transition: .35s;
-    cursor: pointer;
-    box-shadow: 0 15px 35px rgba(0,0,0,.15);
-}
-
-    .envelope:hover {
-        transform: translateY(-12px) rotate(-1deg);
-    }
-
-    .envelope::before {
-        content: "";
-        position: absolute;
-        left: 0;
-        right: 0;
-        top: 0;
-        height: 12px;
-        background: linear-gradient(90deg,#ff7aa8,#ff4d87);
-    }
-
-.selo {
-    width: 75px;
-    height: 75px;
-    border-radius: 50%;
-    background: #ff4d87;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 2rem;
-    margin: auto;
-    margin-bottom: 30px;
-    box-shadow: 0 10px 25px rgba(255,77,135,.35);
-}
-
-.envelope h2 {
-    text-align: center;
-    margin-bottom: 20px;
-    font-size: 1.4rem;
-}
-
-.envelope p {
-    text-align: center;
-    color: #666;
-    line-height: 1.8;
-    margin-bottom: 30px;
-}
-
-.envelope button {
+.carta-page {
+    margin-top: 5vh;
+    min-height: 100vh;
     width: 100%;
-    border: none;
-    padding: 16px;
-    border-radius: 12px;
-    background: #ff4d87;
-    color: white;
-    font-size: 1rem;
-    font-weight: 600;
-    cursor: pointer;
-    transition: .3s;
+    padding: 80px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0f0f13;
+    font-family: "Poppins", sans-serif;
 }
 
-    .envelope button:hover {
-        background: #ff2d73;
+
+/* CARTA */
+
+.carta {
+    width: min(850px, 100%);
+    padding: 70px 80px;
+    background: #fffdf9;
+    border-radius: 6px;
+    box-shadow: 0 20px 60px rgba(100, 30, 50, .15);
+    position: relative;
+}
+
+
+/* DETALHE SUPERIOR */
+
+.carta-topo {
+    text-align: center;
+}
+
+    .carta-topo span {
+        font-size: 40px;
     }
 
-@media(max-width:768px) {
+    .carta-topo p {
+        margin-top: 10px;
+        font-size: 15px;
+        letter-spacing: 3px;
+        text-transform: uppercase;
+        color: #a35b70;
+    }
 
-    .titulo h1 {
-        font-size: 2.3rem;
+
+/* LINHA */
+
+.line {
+    width: 80px;
+    height: 2px;
+    margin: 30px auto 40px;
+    background: #d9829b;
+}
+
+
+/* TÍTULO */
+
+.carta h1 {
+    text-align: center;
+    font-family: "Playfair Display", serif;
+    font-size: 42px;
+    color: #4b2733;
+    margin-bottom: 50px;
+}
+
+
+/* TEXTO */
+
+.texto {
+    color: #4b3a40;
+    font-size: 17px;
+    line-height: 2;
+}
+
+    .texto p {
+        margin-bottom: 25px;
+    }
+
+
+/* ASSINATURA */
+
+.assinatura {
+    margin-top: 60px;
+    text-align: right;
+    color: #6a3a48;
+    font-family: "Playfair Display", serif;
+    font-size: 20px;
+}
+
+    .assinatura strong {
+        display: block;
+        margin-top: 8px;
+        font-size: 28px;
+        color: #a34d68;
+    }
+
+
+/* MOBILE */
+
+@media (max-width: 600px) {
+
+    .carta-page {
+        padding: 30px 15px;
+    }
+
+    .carta {
+        padding: 40px 25px;
+    }
+
+        .carta h1 {
+            font-size: 30px;
+            margin-bottom: 35px;
+        }
+
+    .texto {
+        font-size: 15px;
+        line-height: 1.8;
+    }
+
+    .assinatura {
+        margin-top: 40px;
     }
 }
+
+
+
