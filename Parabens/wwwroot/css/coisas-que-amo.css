@@ -1,6 +1,15 @@
 ﻿@import url( 'https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&family=Poppins:wght@300;400&display=swap' );
 
 
+.nomeinho {
+    margin-top: 2vh;
+    text-align: center;
+}
+
+.btn:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 15px 35px rgba(255,95,143,.4);
+}
 /* =========================================
    RESET
 ========================================= */
@@ -21,7 +30,7 @@
     position: relative;
     overflow: hidden;
     padding: 110px 30px;
-    color: #fff;
+    background-color: #3c1423;
     font-family: "Poppins", sans-serif;
 }
 
@@ -164,7 +173,7 @@
 .card-front {
     transform: translateY(-10px);
     border-color: rgba(210,125,148,.35);
-    box-shadow: 0 30px 70px rgba(0,0,0,.4);
+    box-shadow: 0 15px 35px rgba(255,95,143,.4);
 }
 
 
@@ -285,7 +294,7 @@
 ========================================= */
 
 .love-final {
-    margin-top: 110px;
+    margin-top: 3vh;
     text-align: center;
 }
 
