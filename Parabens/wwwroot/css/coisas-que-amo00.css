@@ -21,7 +21,7 @@
     position: relative;
     overflow: hidden;
     padding: 110px 30px;
-    background-image: linear-gradient( rgba(15, 5, 10, 0.72), rgba(15, 5, 10, 0.88) ), url("/images/nossa-foto.jpg");
+    background-image: linear-gradient( rgba(15, 5, 10, 0.72), rgba(15, 5, 10, 0.88) ), url("/img/background.png");
     background-size: cover;
     background-position: center;
     background-attachment: fixed;

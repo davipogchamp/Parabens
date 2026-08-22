@@ -19,6 +19,10 @@ body {
 /*====================================================
                         HOME
 ====================================================*/
+a {
+    text-decoration: none;
+    color: inherit;
+}
 
 .hero {
     position: relative;
@@ -131,6 +135,7 @@ body {
 .card h2 {
     margin-bottom: 15px;
 }
+
 
 .card p {
     color: #d4d4d4;
@@ -366,7 +371,7 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-color: #0f0f13;
+    background-image: url(../img/noisdoisdoido2.png);
     font-family: "Poppins", sans-serif;
 }
 

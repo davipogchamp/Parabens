@@ -1,0 +1,71 @@
+/* =========================================
+   CAMADA DOS CORAÇÕES
+========================================= */
+
+#coracoes {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    pointer-events: none;
+    z-index: 0;
+}
+
+
+/* =========================================
+   SITE
+========================================= */
+
+#site {
+    position: relative;
+    z-index: 1;
+}
+
+
+/* =========================================
+   CORAÇÃO
+========================================= */
+
+.coracao-caindo {
+    position: absolute;
+    top: -40px;
+    display: block;
+    color: #e88ba5;
+    pointer-events: none;
+    user-select: none;
+    opacity: 0.6;
+    text-shadow: 0 0 8px rgba(232, 139, 165, 0.4);
+    animation-name: queda;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+
+/* =========================================
+   ANIMAÇÃO
+========================================= */
+
+@keyframes queda {
+
+    0% {
+        transform: translateY(-40px) rotate(0deg);
+    }
+
+    25% {
+        transform: translateY(25vh) translateX(25px) rotate(45deg);
+    }
+
+    50% {
+        transform: translateY(50vh) translateX(-25px) rotate(120deg);
+    }
+
+    75% {
+        transform: translateY(75vh) translateX(20px) rotate(220deg);
+    }
+
+    100% {
+        transform: translateY(110vh) translateX(-15px) rotate(360deg);
+    }
+}
